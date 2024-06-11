@@ -1,0 +1,54 @@
+.navbar{
+    display : flex;
+    align-items: center;
+    background-color: #68B4C6;
+    flex-direction: column ;
+}
+
+.container{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.logo{
+    font-size: 34px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    gap: 28px;
+    font-family: "Open sans", sans-serif;
+    button{
+        background-color: #72B4F3;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid #000;
+        cursor: pointer;
+
+        &:hover{
+            background-color: skyblue;
+            color: #000;
+        }
+    }    
+}
+
+hr{
+    width: 100%;
+    height: 0;
+    border: 0.5px solid grey;
+}
+
+.menu{
+    width: 1400px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: gray;
+    font-family: "Open sans", sans-serif;
+}
+   
