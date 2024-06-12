@@ -1,9 +1,9 @@
 import React from "react";
-import "./Order.css";
+import "./Orders.css";
 
 const Order = () => {
     return (
-        <div className="order"> Order </div>
+        <div className="orders"> Order </div>
     )
 }
 
