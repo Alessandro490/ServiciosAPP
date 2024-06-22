@@ -1,13 +1,14 @@
-import React from "react";
-import "./catCard.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './CatCard.css';
 
 const CatCard = ({item}) => {
-    return(
+    return (
         <Link to="/gigs?cat=design">
-        <div className="catCard">
-           <img src={item.img} alt="imagen"/>
-           <span className="desc">{item.desc}</span>
-           <span className="title">{item.titel}</span>
+        <div className='catCard'>
+            <img src={item.img} alt="" />
+            <span className='desc'> {item.desc} </span>
+            <span className='title'> {item.title} </span>
         </div>
         </Link>
     )
