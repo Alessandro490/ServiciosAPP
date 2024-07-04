@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './CatCard.css';
+import './catCard.css';
 
 const CatCard = ({item}) => {
     return (
