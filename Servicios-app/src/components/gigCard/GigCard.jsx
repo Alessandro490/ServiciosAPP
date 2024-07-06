@@ -6,7 +6,7 @@ import noPhotoIcon from "../../../src/img/no-photo.jpg";
 const GigCard = ({ item }) => {
   const imageUrl = item.foto_servicio ? `data:image/jpeg;base64,${item.foto_servicio}` : noPhotoIcon;
     return(
-        <Link to="/gig/123" className="link">
+      <Link to={`/gig/${item.servicio_id}`} className="link">
         <div className="gigCard">
           <img src={imageUrl} alt="" />
           <div className="info">
