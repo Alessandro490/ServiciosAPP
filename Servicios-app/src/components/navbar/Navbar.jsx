@@ -39,7 +39,9 @@ const Navbar = () => {
                 </div>
                 <div className="links">
                 <span > New services </span>
-                <span > Explore </span>
+                <Link to="/gigs" className="link"> 
+                    <span className="text"> Explore </span>
+                     </Link> 
                 <span > Schedule </span>
                 <span > Log in </span>
                 {!currentUser?.isWorker && <span > Become a worker </span>}
@@ -69,7 +71,7 @@ const Navbar = () => {
                 <>
                 <hr/>
                 <div className="menu">
-                <Link className="link menuLink" to="/">
+                <Link className="link menuLink" to="/gigs">
                 Graphic and Design
                 </Link>
                 <Link className="link" to="/">
