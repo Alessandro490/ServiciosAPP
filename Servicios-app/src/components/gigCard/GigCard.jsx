@@ -1,18 +1,20 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import "./GigCard.css";
+import noPhotoIcon from "../../../src/img/no-photo.jpg";
 
-const GigCard = ({item}) => {
+const GigCard = ({ item }) => {
+  const imageUrl = item.foto_servicio ? `data:image/jpeg;base64,${item.foto_servicio}` : noPhotoIcon;
     return(
         <Link to="/gig/123" className="link">
         <div className="gigCard">
-          <img src={item.img} alt="" />
+          <img src={imageUrl} alt="" />
           <div className="info">
             <div className="user">
               <img src={item.pp} alt="" />
-              <span>{item.username}</span>
+              <span>{item.nombre_servicio}</span>
             </div>
-            <p>{item.desc}</p>
+            <p>{item.descripcion_servicio}</p>
             <div className="star">
               <img src="./img/star.png" alt="" />
               <span>{item.star}</span>
@@ -24,8 +26,7 @@ const GigCard = ({item}) => {
             <div className="price">
               <span>STARTING AT</span>
               <h2>
-                $ {item.price}
-                <sup>99</sup>
+                $ {item.precio_intervalo}
               </h2>
             </div>
           </div>

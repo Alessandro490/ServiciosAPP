@@ -1,13 +1,28 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./Gigs.css";
-import { gigs } from "../../data";
+//import { gigs } from "../../data";
 import GigCard from "../../components/gigCard/GigCard";
 
 function Gigs() {
   const [sort, setSort] = useState("sales");
   const [open, setOpen] = useState(false);
+  const [gigs, setGigs] = useState([]);
   const minRef = useRef();
   const maxRef = useRef();
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://localhost:5000/api/gigs');
+        const data = await response.json();
+        setGigs(data);
+      } catch (error) {
+        console.error('Error fetching data', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const reSort = (type) => {
     setSort(type);
@@ -54,7 +69,7 @@ function Gigs() {
         </div>
         <div className="cards">
           {gigs.map((gig) => (
-            <GigCard key={gig.id} item={gig} />
+            <GigCard key={gig.servicio_id} item={gig} />
           ))}
         </div>
       </div>
