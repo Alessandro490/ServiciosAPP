@@ -1,7 +1,18 @@
+import dotenv from 'dotenv';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+
 import express, { json } from 'express';
 import cors from 'cors';
 import pkg from 'pg';
+import path from 'path';
 const { Pool } = pkg;
+
+
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -10,10 +21,10 @@ app.use(cors());
 app.use(json());
 
 const pool = new Pool({
-    user: 'admin',
-    host: 'admin.dpg-cq1mdmqju9rs73babqf0-a.oregon-postgres.render.com',
-    database: 'dba_sv',
-    password: 'Pm4pPXQeWTihinVJCgtFWRzAdZKHZLXP',
+    user: process.env.DB_USER,
+    host: process.env.DB_HOST,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
     port: 5432, // default port for PostgreSQL,
     ssl: {
         rejectUnauthorized: false,
