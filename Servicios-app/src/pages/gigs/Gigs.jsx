@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Gigs.css";
-//import { gigs } from "../../data";
 import GigCard from "../../components/gigCard/GigCard";
 
 function Gigs() {
@@ -38,21 +37,21 @@ function Gigs() {
     <div className="gigs">
       <div className="container">
         <span className="breadcrumbs"> Servicios SV</span>
-        <h1>All workers</h1>
+        <h1>Todos los trabajadores</h1>
         <p>
-          Explore the freelancer workers
+          Explora el mercado de trabajadores independientes y encuentra el que se acople a ti 
         </p>
         <div className="menu">
           <div className="left">
-            <span>Budget</span>
+            <span>Presupuesto</span>
             <input ref={minRef} type="number" placeholder="min" />
             <input ref={maxRef} type="number" placeholder="max" />
-            <button onClick={apply}>Apply</button>
+            <button onClick={apply}>Aplicar</button>
           </div>
           <div className="right">
-            <span className="sortBy">Sort by</span>
+            <span className="sortBy">Ordenar por</span>
             <span className="sortType">
-              {sort === "sales" ? "Best Selling" : "Newest"}
+              {sort === "sales" ? "Más vendido" : "Newest"}
             </span>
             <img src="./img/down.png" alt="" onClick={() => setOpen(!open)} />
             {open && (

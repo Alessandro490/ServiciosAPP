@@ -34,18 +34,19 @@ const Navbar = () => {
             <div className="container">
                 <div className="logo">
                      <Link to="/" className="link"> 
-                    <span className="text"> Servicios-app </span>
+                    <span className="text"> Servicios SV </span>
                      </Link> 
                 </div>
                 <div className="links">
-                <span > New services </span>
+                <Link to="/gigs" className="link">   
+                <span > Nuevos servicios </span>
+                </Link>
                 <Link to="/gigs" className="link"> 
-                    <span className="text"> Explore </span>
+                    <span className="text"> Explora </span>
                      </Link> 
-                <span > Schedule </span>
-                <span > Log in </span>
+                <span > Iniciar sesión </span>
                 {!currentUser?.isWorker && <span > Become a worker </span>}
-                {currentUser && <button> Sign up </button>}
+                {currentUser && <button> Registrate </button>}
                 {currentUser &&(
                     <div className="user" onClick={()=>setOpen(!open)}>
                         <img src="https://cdn-icons-png.flaticon.com/512/33/33332.png" alt="Logo de la imagen"/>
@@ -54,13 +55,13 @@ const Navbar = () => {
                             {
                                 currentUser?.isWorker &&(
                                     <>
-                                    <Link className="link" to="/mygigs"> Gigs </Link>
-                                    <Link className="link" to="/add"> Add new Gigs </Link>
+                                    <Link className="link" to="/mygigs"> Trabajos </Link>
+                                    <Link className="link" to="/add"> Agregar trabajo </Link>
                                     </>
                             )}
-                            <Link className="link" to="/orders">Orders</Link>
-                            <Link className="link" to="/messages">Messages</Link>
-                            <Link className="link" to="/">Logout</Link>
+                            <Link className="link" to="/orders">Ordenes</Link>
+                            <Link className="link" to="/messages">Mensajes</Link>
+                            <Link className="link" to="/">Cerrar sesión</Link>
                         </div>}
                     </div>
                 )}
@@ -72,19 +73,19 @@ const Navbar = () => {
                 <hr/>
                 <div className="menu">
                 <Link className="link menuLink" to="/gigs">
-                Graphic and Design
+                Diseño
                 </Link>
                 <Link className="link" to="/">
-                Technology
+                Tecnología
                 </Link>
                 <Link className="link" to="/">
-                Video and animation
+                Video y animación
                 </Link>
                 <Link className="link" to="/">
-                Bussiness
+                Negocios
                 </Link>
                 <Link className="link" to="/">
-                Music
+                Música
                 </Link>
                 </div>
                 </>

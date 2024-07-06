@@ -16,18 +16,4 @@ const Slide = ({ children, slidesToShow, arrowsScroll }) => {
     );
   };    
 
-/*const Slide = () => {
-return (
-    <div className="slide">
-        <div className="container">
-        <Slider dots slidesToShow={5} arrowsScrol={5}>
-            {cards.map(card => (
-                <CatCard item={card} key={card.id}/>
-            ))}
-        </Slider>
-        </div>
-    </div>
-)
-}*/
-
 export default Slide;

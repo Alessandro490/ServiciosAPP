@@ -6,21 +6,21 @@ const Featured = () => {
         <div className="featured">
            <div className="container">
                <div className="left">
-               <h1>Find the freelance service you were looking for</h1>
+               <h1>Encuentra los mejores trabajadores independientes que andabas buscando</h1>
                     <div className="search">
                        <div className="searchInput">
                            <img src="./img/Search.png" alt="Imagen de busqueda"  className="Lupa"/>
-                           <input type="text" placeholder='Try "building mobil app" ' />
+                           <input type="text" placeholder='Desarrollar una app móvil ' />
                        </div>
-                       <button>Search</button>
+                       <button>Buscar</button>
                     </div>
                     <div className="popular">
                         <span>Popular: </span>
-                        <button>Web Design</button>
-                        <button>Data mining</button>
-                        <button>Android developer</button>
+                        <button>Diseño web</button>
+                        <button>Minería de datos</button>
+                        <button>Desarrollador Android</button>
                         <button>Full stack</button>
-                        <button>Data analyst</button>
+                        <button>Analista de datos</button>
                     </div>
                 </div>
                 <div className="right">

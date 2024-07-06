@@ -5,45 +5,45 @@ const Add = () => {
     return (
       <div className="add">
         <div className="container">
-          <h1>Add New Gig</h1>
+          <h1>Agregar nuevo trabajo</h1>
           <div className="sections">
             <div className="info">
-              <label htmlFor="">Title</label>
+              <label htmlFor="">Título</label>
               <input
                 type="text"
-                placeholder="Please type yor service title name here"
+                placeholder="Por favor escribe el titulo aquí"
               />
-              <label htmlFor="">Category</label>
+              <label htmlFor="">Categoría</label>
               <select name="cats" id="cats">
-                <option value="design">Design</option>
-                <option value="web">Web Development</option>
-                <option value="animation">Data analyst</option>
+                <option value="design">Diseño</option>
+                <option value="web">Desarrollo Web</option>
+                <option value="animation">Analista de datos</option>
                 <option value="music">QA</option>
-                <option value="music">Music</option>
-                <option value="music">Gardener</option>
+                <option value="music">Música</option>
+                <option value="music">Jardinero</option>
               </select>
-              <label htmlFor="">Gigs Cover Image</label>
+              <label htmlFor="">Imagen del trabajo</label>
               <input type="file" />
-              <label htmlFor="">Upload Images</label>
+              <label htmlFor="">Subir imágenes</label>
               <input type="file" multiple />
-              <label htmlFor="">Description</label>
-              <textarea name="" id="" placeholder="Brief description to introduce your service and qualities to customers " cols="0" rows="16"></textarea>
+              <label htmlFor="">Descripcion</label>
+              <textarea name="" id="" placeholder="Breve descripción que introduzca tus servicios" cols="0" rows="16"></textarea>
               <button>Create</button>
             </div>
             <div className="details">
-              <label htmlFor="">Service Title</label>
+              <label htmlFor="">Título del servicio</label>
               <input type="text" placeholder="Full stack web page" />
-              <label htmlFor="">Short Description</label>
+              <label htmlFor="">Breve descripción</label>
               <textarea name="" id="" placeholder="Short description of your service" cols="30" rows="10"></textarea>
-              <label htmlFor="">Delivery Time (e.g. 3 days)</label>
+              <label htmlFor="">Tiempo de entrega (e.j. 3 días)</label>
               <input type="number" />
-              <label htmlFor="">Revision Number</label>
+              <label htmlFor="">Número</label>
               <input type="number" />
-              <label htmlFor="">Add Features</label>
-              <input type="text" placeholder="Page design" />
-              <input type="text" placeholder="Upload a file" />
-              <input type="text" placeholder="Add some effects" />
-              <label htmlFor="">Price</label>
+              <label htmlFor="">Agrega características</label>
+              <input type="text" placeholder="Diseño UI/UX" />
+              <input type="text" placeholder="Subir un funcionalidad" />
+              <input type="text" placeholder="Agregar efectos" />
+              <label htmlFor="">Precio</label>
               <input type="number" />
             </div>
           </div>

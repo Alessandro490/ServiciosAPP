@@ -7,34 +7,27 @@ function Footer() {
       <div className="container">
         <div className="top">
           <div className="item">
-            <h2>Categories</h2>
-            <span>Graphics</span>
-            <span>Digital Marketing</span>
-            <span>Programming</span>
-            <span>Data</span>
-            <span>Business</span>
+            <h2>Categorias</h2>
+            <span>Mercadeo digital</span>
+            <span>Programación</span>
+            <span>Big Data</span>
+            <span>Negocios</span>
           </div>
           <div className="item">
-            <h2>About</h2>
-            <span>Terms of Service</span>
-            <span>Contact Sales</span>
+            <h2>Sobre nosotros</h2>
+            <span>Términos y servicios</span>
+            <span>Contacta a los trabajadores</span>
           </div>
           <div className="item">
-            <h2>Support</h2>
-            <span>Help & Support</span>
-            <span>Trust & Safety</span>
-            <span>Selling on Servicios SV</span>
+            <h2>Soporte</h2>
+            <span>Ayuda y soporte</span>
+            <span>Confianza y seguridad</span>
+            <span>Brindar trabajos en ServiciosSv</span>
           </div>
           <div className="item">
-            <h2>Community</h2>
-            <span>Forum</span>
-            <span>Events</span>
-            <span>Blog</span>
-          </div>
-          <div className="item">
-            <h2>More From Servicios SV</h2>
-            <span>Get Inspired</span>
-            <span>Learn</span>
+            <h2>Más sobre nosotros</h2>
+            <span>Comienza a trabajar</span>
+            <span>Qué somos</span>
           </div>
         </div>
       </div>

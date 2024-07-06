@@ -18,40 +18,37 @@ const Home = () => {
             <div className="features">
                 <div className="container">
                     <div className="item">
-                        <h1>Freelance worker is a new world</h1> 
+                        <h1>Los trabajadores independientes son el nuevo mercado</h1> 
                         <div className="title">
-                            The best budget ever    
-                            
+                            Con el mejor presupuesto       
                         </div> 
-                    </div>
-                    <div className="item">
-                        Video a poner a la derecha
+                        <div className="title">
+                            Una nueva manera de trabajar
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div className="features dark">
                 <div className="container">
                     <div className="item">
-                        <h1>Servicios SV bussines</h1> 
-                        <h1> A new business model designed for workers </h1>
+                        <h1>Negocios Servicios SV</h1> 
+                        <h1> Un nuevo modelo de negocio para trabajadores </h1>
                         <p>
-                            Find an experiencie new way to work and get paid
+                            Experimenta una nueva manera de trabajar con Servicios SV
                         </p>
                         <div className="title">
                             <img src="./img/check.png" alt="" />
-                            The best budget ever    
+                            Presupuesto flexible   
                         </div> 
                         <div className="title">
                         <img src="./img/check.png" alt="" />
-                            Connect with the new workers   
+                            Contacta nuevos trabajadores   
                         </div> 
                         <div className="title">
                         <img src="./img/check.png" alt="" />
-                            Get matched with perfect new talent
+                            Emparejate con nuevos talentos
                         </div> 
-                    </div>
-                    <div className="item">
-                        Video a poner a la derecha
                     </div>
                 </div>
             </div>
