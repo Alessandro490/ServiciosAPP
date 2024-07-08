@@ -28,8 +28,7 @@
           object-fit: cover;
         }
   
-        span {
-        }
+       
       }
   
       p {
@@ -50,6 +49,7 @@
           font-size: 14px;
           font-weight: bold;
           color: #ffc108;
+          text-align: center;
         }
       }
     }
@@ -62,7 +62,7 @@
     .detail {
       padding: 10px 20px;
       display: flex;
-      align-items: center;
+      align-items: end;
       justify-content: space-between;
   
       img {
@@ -73,9 +73,11 @@
       }
   
       .price {
+
         span {
           color: #999;
           font-size: 12px;
+          align-items: end;
         }
   
         h2 {
@@ -90,5 +92,6 @@
           font-weight: 300;
         }
       }
+     
     }
   }
