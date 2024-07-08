@@ -72,6 +72,7 @@ function Gigs() {
           ))}
         </div>
       </div>
+     
     </div>
   );
 }
