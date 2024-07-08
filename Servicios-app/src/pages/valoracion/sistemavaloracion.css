@@ -1,0 +1,26 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .rating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .rating .on .star {
+    color: gold;
+  }
+  
+  .rating .off .star {
+    color: #e4e5e9;
+  }
+  
+  .rating .star {
+    font-size: 2rem;
+    padding: 0.1rem;
+  }
+  
