@@ -33,33 +33,43 @@ const Gig = () => {
     fetchGig();
   }, [id]);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading) return <div className="loading">Loading...</div>;
+  if (error) return <div className="error">Error: {error}</div>;
 
-return (
+  return (
     <div className="gig">
-        {gig ? (
-            <>
-                <h1>{gig.nombre_servicio}</h1>
-                <img src={gig.foto_servicio ? `data:image/jpeg;base64,${gig.foto_servicio}` : noPhotoIcon} alt={gig.nombre_servicio} />
-                <p>{gig.descripcion_servicio}</p>
-                {gig.tipo_intervalo === 'cotizable' ? (
-                    <p>Precio: {gig.tipo_intervalo}</p>
-                ) : (
-                    <>
-                        <p>Precio: ${gig.precio_intervalo} por {gig.tipo_intervalo}</p>
-                    </>
-                )}
-                <p>Categorias: {gig.categorias}</p>
-                <p>Por: {gig.nombre} {gig.apellido}</p>
-                <p>Numero contacto: {gig.telefono} </p>
-                <p>Correo: {gig.correo_electronico} </p>
-            </>
-        ) : (
-            <div>No gig found</div>
-        )}
+      {gig ? (
+        <>
+          <img
+            src={gig.foto_servicio ? `data:image/jpeg;base64,${gig.foto_servicio}` : noPhotoIcon}
+            alt={gig.nombre_servicio}
+          />
+          <div className="gig-details">
+            <h1>{gig.nombre_servicio}</h1>
+            <p>{gig.descripcion_servicio}</p>
+            {gig.tipo_intervalo === 'cotizable' ? (
+              <p className="price">Precio: {gig.tipo_intervalo}</p>
+            ) : (
+              <p className="price">
+                Precio: ${gig.precio_intervalo} por {gig.tipo_intervalo}
+              </p>
+            )}
+            <div className="categories">
+              <p><strong>Categorias:</strong> {gig.categorias}</p>
+            </div>
+            <div className="contact-info">
+              <p><strong>Por:</strong> {gig.nombre} {gig.apellido}</p>
+              <p><strong>Numero contacto:</strong> {gig.telefono}</p>
+              <p><strong>Correo:</strong> {gig.correo_electronico}</p>
+            </div>
+            <button className="contact-button">Contactar</button>
+          </div>
+        </>
+      ) : (
+        <div>No gig found</div>
+      )}
     </div>
-);
+  );
 };
 
 export default Gig;

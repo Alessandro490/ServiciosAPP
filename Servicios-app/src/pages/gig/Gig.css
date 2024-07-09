@@ -1,0 +1,81 @@
+/* Gig.css */
+.gig {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gig img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  
+  .gig-details {
+    flex: 1;
+  }
+  
+  .gig-details h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .gig-details p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .gig-details p strong {
+    color: #333;
+  }
+  
+  .gig-details .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d9534f;
+  }
+  
+  .gig-details .categories,
+  .gig-details .contact-info {
+    margin-top: 20px;
+  }
+  
+  .gig-details .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .contact-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error,
+  .loading {
+    text-align: center;
+    font-size: 1.5em;
+    color: #d9534f;
+    margin-top: 20px;
+  }
+  
